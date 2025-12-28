@@ -1,17 +1,43 @@
-# Python 01 — Introdução ao Python
+# 🧱 Python I — Introdução ao Python
 
-Este módulo cobre os fundamentos da linguagem Python,
-incluindo tipos de dados, estruturas de controle, funções
-e coleções.
+Este módulo aborda os fundamentos da linguagem Python,
+servindo como base para todos os módulos seguintes.
 
-## Conteúdos
-- Fundamentos e I/O
+---
+
+## 📚 Conteúdos Estudados
+- Tipos de dados
+- Entrada e saída de dados
 - Operadores
 - Strings
 - Collections
 - Condicionais
-- Laços
+- Laços de repetição
 - Funções
 
-## Exercício Final
-Sistema simples de gerenciamento de jogadores e times via terminal.
+---
+
+## 🧪 Exercícios Desenvolvidos
+- Exercício 01 — Antecessor e sucessor | Média de notas
+- Exercício 02 — Manipulação de strings
+- Exercício 03 — Condicionais
+- Exercício 04 — Laços de repetição
+- Exercício 05 — Funções
+
+---
+
+## 🏁 Exercício Final
+**Gerenciamento de jogadores e times**, utilizando:
+- listas
+- dicionários
+- funções
+- estruturas de controle
+
+📂 Arquivo: `gerenciamento_times.py`
+
+---
+
+## 🎯 Objetivo do Módulo
+- Consolidar a lógica de programação
+- Desenvolver pensamento estruturado
+- Preparar base para Programação Orientada a Objetos
