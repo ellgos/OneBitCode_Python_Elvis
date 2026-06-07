@@ -1,35 +1,76 @@
-num1 = int(input("Digite o primeiro número: "))
-num2 = int(input("Digite o segundo número: "))
+# ============================================================
+# OPERADORES ARITMÉTICOS
+# ============================================================
 
-# Aritiméticos
-sum = num1 + num2
-sub = num1 - num2
-mult = num1 * num2
-div = num1 / num2   
+def exemplos_aritmeticos():
+    a = 10
+    b = 3
 
-mod = num1 % num2 # Resto da divisão
-exp = num1 ** num2 # Potenciação
+    soma        = a + b    # 13
+    subtracao   = a - b    # 7
+    divisao     = a / b    # 3.333...
+    divisao_int = a // b   # 3  → divisão inteira
+    produto     = a * b    # 30
+    modulo      = a % b    # 1  → resto da divisão
+    potencia    = a ** b   # 1000
 
-print(f"Resto da divisão: {num1} por {num2} é {mod}")
-print(f"Potenciação: {num1} elevado a {num2} é {exp}")
+    print("=" * 40)
+    print("OPERADORES ARITMÉTICOS")
+    print("=" * 40)
+    print(f"a = {a}, b = {b}")
+    print(f"Soma:            {a} + {b}  = {soma}")
+    print(f"Subtração:       {a} - {b}  = {subtracao}")
+    print(f"Divisão:         {a} / {b}  = {divisao:.2f}")
+    print(f"Divisão inteira: {a} // {b} = {divisao_int}")
+    print(f"Produto:         {a} * {b}  = {produto}")
+    print(f"Módulo (resto):  {a} % {b}  = {modulo}")
+    print(f"Potência:        {a} ** {b} = {potencia}")
 
-# Comparação
-bigger = num1 > num2
-smaller = num1 < num2
-equal = num1 == num2
-different = num1 != num2
-bigger_equal = num1 >= num2
-smaller_equal = num1 <= num2
 
-print(f"{num1} é maior que {num2}? {bigger}")
-print(f"{num1} é menor que {num2}? {smaller}")
-print(f"{num1} é igual a {num2}? {equal}")
-print(f"{num1} é diferente de {num2}? {different}")
-print(f"{num1} é maior ou igual a {num2}? {bigger_equal}")
-print(f"{num1} é menor ou igual a {num2}? {smaller_equal}")
+# ============================================================
+# OPERADORES RELACIONAIS (COMPARAÇÃO)
+# ============================================================
 
-# Atribuição
-num1 += 1 # num1 = num1 + 1
-num1 -= 1 # num1 = num1 - 1
-num1 *= 1 # num1 = num1 * 1
-num1 /= 1 # num1 = num1 / 1
+def exemplos_relacionais():
+    x = 10
+    y = 20
+
+    print("\n" + "=" * 40)
+    print("OPERADORES RELACIONAIS")
+    print("=" * 40)
+    print(f"x = {x}, y = {y}")
+    print(f"x == y  (igual):           {x == y}")
+    print(f"x != y  (diferente):       {x != y}")
+    print(f"x >  y  (maior):           {x > y}")
+    print(f"x <  y  (menor):           {x < y}")
+    print(f"x >= y  (maior ou igual):  {x >= y}")
+    print(f"x <= y  (menor ou igual):  {x <= y}")
+
+
+# ============================================================
+# EXEMPLO PRÁTICO — Calculadora simples
+# ============================================================
+
+def calculadora():
+    print("\n" + "=" * 40)
+    print("CALCULADORA SIMPLES")
+    print("=" * 40)
+
+    a = float(input("Digite o primeiro número: "))
+    b = float(input("Digite o segundo número: "))
+
+    print(f"\nSoma:            {a + b}")
+    print(f"Subtração:       {a - b}")
+    print(f"Multiplicação:   {a * b}")
+    print(f"Divisão:         {a / b:.2f}" if b != 0 else "Divisão: ⚠️ Divisão por zero!")
+    print(f"Potência a**b:   {a ** b}")
+    print(f"Resto (a % b):   {a % b}" if b != 0 else "")
+
+    print(f"\n{a} é maior que {b}? {a > b}")
+    print(f"{a} é igual a {b}?  {a == b}")
+
+
+if __name__ == "__main__":
+    exemplos_aritmeticos()
+    exemplos_relacionais()
+    calculadora()

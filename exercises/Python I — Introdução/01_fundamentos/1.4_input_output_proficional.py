@@ -6,14 +6,14 @@ def collect_player_data():
     This Python function collects data about a player including their name, age, and favorite game.
     :return: A dictionary containing the player's name, age, and favorite game is being returned.
     """
-    playerName = input("Nome do jogador: ")
+    playername = input("Nome do jogador: ")
     age = int(input("Idade do jogador: "))
-    favoriteGame = input("Jogo favorito: ")
+    favoritegame = input("Jogo favorito: ")
 
     return {
-        "name": playerName,
+        "name": playername,
         "age": age,
-        "favoriteGame": favoriteGame
+        "favoriteGame": favoritegame
     }
 
 # Exemplo de uso da função
